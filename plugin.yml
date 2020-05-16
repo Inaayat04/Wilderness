@@ -1,0 +1,10 @@
+name: Wilderness
+version: 1.0.0
+main: Inaayat\Wild\Main
+api: [3.0.0]
+author: Inaayat
+
+commands:
+  wild:
+    description: "Teleport you to a random location"
+    aliases: [wilderness]
