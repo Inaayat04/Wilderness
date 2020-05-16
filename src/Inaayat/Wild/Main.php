@@ -29,9 +29,9 @@ class Main extends PluginBase
                 if($sender instanceof Player){
                     $min = $this->config->get("MinCoord");
                     $max = $this->config->get("MaxCoord");
-                    $x = rand($min, $max);
-                    $y = rand("75", "80");
-                    $z = rand($min, $max);
+                    $x = mt_rand($min, $max);
+                    $y = mt_rand("75", "80");
+                    $z = mt_rand($min, $max);
                     $world = $this->config->get("WildWorld");
                     $level = $this->getServer()->getLevelByName($world);
                     $sender->teleport(new Position($x, $y, $z, $level));
