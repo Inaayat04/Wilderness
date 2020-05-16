@@ -38,5 +38,6 @@ class Main extends PluginBase
                     $sender->sendMessage("[" . TF::AQUA . "Wilderness" . TF::RESET . "] " . TF::YELLOW . "You have been teleported to a random location.");
                 }
         }
+        return true;
     }
 }
