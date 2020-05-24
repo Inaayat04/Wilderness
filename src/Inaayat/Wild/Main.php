@@ -35,7 +35,7 @@ class Main extends PluginBase
                     $world = $this->config->get("WildWorld");
                     $level = $this->getServer()->getLevelByName($world);
                     $sender->teleport(new Position($x, $y, $z, $level));
-                    $sender->sendMessage("[" . TF::AQUA . "Wilderness" . TF::RESET . "] " . TF::YELLOW . "You have been teleported to a random location.");
+                    $sender->sendMessage("[" . TF::AQUA . "Wilderness" . TF::RESET . "] " . TF::YELLOW . " You have been teleported to a random location.");
                 }
         }
         return true;
